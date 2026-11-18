@@ -165,7 +165,6 @@ El algoritmo implementado se divide en tres fases lógicas, separadas en distint
 Para la parte bonus, la única variable estática se transforma en un array de punteros: `static char *cad[1024] = {NULL};`. En sistemas Unix, los descriptores de archivo son números enteros secuenciales. Al utilizar el propio `fd` como índice del array, el algoritmo es capaz de aislar los remanentes (`leftovers`) de hasta 1024 archivos simultáneos. Esto garantiza un seguimiento independiente del estado de lectura de cada documento sin que los buffers se mezclen.
 
 ---
-
 ## Recursos y Referencias
 
 -   **Documentación de C:** Se han consultado asiduamente las páginas del manual de Unix (`man 2 read`, `man 3 malloc`, `man 3 free`) para asegurar el manejo correcto de la memoria y la captura de errores del sistema.
